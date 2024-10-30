@@ -22,7 +22,7 @@ function Home() {
           Explore Matching Opportunities.
         </p>
         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 w-full max-w-lg">
-          <div className="px-4 flex items-center py-2 rounded-md bg-white  w-full md:w-auto">
+          <div className="px-4 flex items-center sm:py-2 py-1 rounded-md bg-white  w-full md:w-auto">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.8em"
@@ -42,7 +42,7 @@ function Home() {
               className="px-4 py-1 rounded-md focus:outline-none w-full md:w-auto"
             />
           </div>
-          <div className="px-4 flex items-center py-2 rounded-md bg-white  w-full md:w-auto">
+          <div className="px-4 flex items-center sm:py-2 py-1 rounded-md bg-white  w-full md:w-auto">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.8em"
@@ -67,7 +67,7 @@ function Home() {
         </div>
         <p className="text-white mt-4">
           Are you a buyer?
-          <a href="#" className="text-blue underline ">
+          <a href="#" className="text-white underline ">
             Click here if you are looking to post a requirement
           </a>
         </p>
@@ -107,10 +107,10 @@ function Home() {
           </button>
         </div>
         <div className=" grid grid-cols-2  gap-4">
-          <button className="px-6 py-2 hover:bg-orange hover:text-white hover:border-none border rounded-md border-orange border bg-white ">
+          <button className="px-2 py-2 text-center hover:bg-orange hover:text-white hover:border-none border rounded-md border-orange border bg-white ">
             Abu Dhabi
             <svg
-              className="inline ml-2"
+              className="inline sm:flex hidden ml-2"
               xmlns="http://www.w3.org/2000/svg"
               width="1.78em"
               height="1em"
@@ -128,10 +128,10 @@ function Home() {
           
           </button>
 
-          <button className="px-6 py-2 hover:bg-orange hover:text-white hover:border-none border rounded-md border-orange border bg-white ">
+          <button className="px-2 py-2 text-center hover:bg-orange hover:text-white hover:border-none border rounded-md border-orange border bg-white ">
             Dubai
             <svg
-              className="inline ml-2"
+              className="inline sm:flex hidden ml-2"
               xmlns="http://www.w3.org/2000/svg"
               width="1.78em"
               height="1em"
@@ -149,10 +149,10 @@ function Home() {
           
           </button>
 
-          <button className="px-6 py-2 hover:bg-orange hover:text-white hover:border-none border rounded-md border-orange border bg-white ">
+          <button className="px-2 py-2 text-center hover:bg-orange hover:text-white hover:border-none border rounded-md border-orange border bg-white ">
             Sharjah & Ajman
             <svg
-              className="inline ml-2"
+              className="inline sm:flex hidden ml-2"
               xmlns="http://www.w3.org/2000/svg"
               width="1.78em"
               height="1em"
@@ -170,10 +170,10 @@ function Home() {
           
           </button>
 
-          <button className="px-6 py-2 hover:bg-orange hover:text-white hover:border-none border rounded-md border-orange border bg-white ">
+          <button className="px-2 py-2 text-center hover:bg-orange hover:text-white hover:border-none border rounded-md border-orange border bg-white ">
             Fujairah
             <svg
-              className="inline ml-2"
+              className="inline sm:flex hidden  ml-2"
               xmlns="http://www.w3.org/2000/svg"
               width="1.78em"
               height="1em"
@@ -191,10 +191,10 @@ function Home() {
           
           </button>
 
-          <button className="px-6 py-2 hover:bg-orange hover:text-white hover:border-none border rounded-md border-orange border bg-white ">
+          <button className="px-2  text-center py-2 hover:bg-orange hover:text-white hover:border-none border rounded-md border-orange border bg-white ">
             Fujairah
             <svg
-              className="inline ml-2"
+              className="inline sm:flex hidden ml-2"
               xmlns="http://www.w3.org/2000/svg"
               width="1.78em"
               height="1em"
@@ -216,7 +216,7 @@ function Home() {
       
 
     
-      <div className="   p-10">
+      <div className="   sm:p-10 p-3">
         <div className="w-full flex flex-wrap gap-10 bg-blue border-2 rounded-lg p-6">
           <div className="relative  rounded-md">
             <img
@@ -246,16 +246,16 @@ function Home() {
           </div>
 
         
-          <div className="flex text-white mt-4 p-4 w-96">
+          <div className="flex text-white mt-4 p-4">
             <div className="">
-              <div className="flex gap-10  justify-between w-96">
+              <div className="flex gap-10 ">
                 <h3
                   onClick={() => {
                     setBuyerButton("Buyer");
                   }}
-                  className={`font-bold text-2xl py-2 w-96  text-center ${
+                  className={`font-bold sm:text-2xl py-2 px-4 text-center ${
                     buyerButton == "Buyer"
-                      ? "text-darkOrange w-96 border-b border-darkOrange border-b-2"
+                      ? "text-darkOrange border-b border-darkOrange border-b-2"
                       : ""
                   }`}
                 >
@@ -265,9 +265,9 @@ function Home() {
                   onClick={() => {
                     setBuyerButton("Supplier");
                   }}
-                  className={`font-bold text-2xl py-2 w-96  text-center ${
+                  className={`font-bold sm:text-2xl py-2 px-4  text-center ${
                     buyerButton == "Supplier"
-                      ? "text-darkOrange w-96 border-b border-darkOrange border-b-2"
+                      ? "text-darkOrange  border-b border-darkOrange border-b-2"
                       : ""
                   }`}
                 >
@@ -351,24 +351,23 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* div 3 section end */}
+    
 
-      {/* div 4 section start */}
 
-      <div className="py-10 bg-acqua flex justify-evenly">
+      <div className="py-10 bg-acqua flex flex-col gap-4 sm:flex-row items-center justify-center sm:justify-evenly">
         <p className="font-bold text-2xl">
           Let Suppliers{" "}
           <span className="border-b border-b-2 border-b-darkOrange">
             Find You{" "}
           </span>
         </p>
-        <button className="bg-darkOrange text-white px-6 py-2 rounded-md ">
+        <div>
+        <button className="bg-darkOrange  text-white px-6 py-2 rounded-md ">
           Get Verified
         </button>
+        </div>
       </div>
-      {/* div 4 section end */}
-
-      {/* div 5 section start */}
+  
       <div className="py-12">
         <div className="text-center  mb-8">
           <h2 className="text-2xl font-bold">How it works?</h2>
@@ -438,7 +437,7 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* div 5 section end */}
+    
 
       <Footer/>
     </>
