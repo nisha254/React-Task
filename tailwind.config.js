@@ -18,7 +18,7 @@ export default {
 
       },
       backgroundImage:{
-        'bg':"url('src/assets/Rectangle.png')"   
+        'bg':"url('/src/assets/Rectangle.png')"   
         }
     },
   },
